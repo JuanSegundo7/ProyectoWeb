@@ -76,6 +76,7 @@ header{
 #barraDeBusqueda-head{
     display: flex;
     flex-direction: row;
+    height: 55px;
     
 }
 
@@ -101,6 +102,7 @@ header{
     margin: 10px;
     margin-top: 5vh;
     margin-bottom: 5vh;
+    padding: 10px;
     z-index: 1;
     border: 5px;
     border-radius: 12px;
@@ -136,7 +138,7 @@ header p    {
     text-align: center;
     background-color: #EAC926;
     font-weight: 400;
-    max-width: 350px;
+    max-width: 310px;
 
 
 }
@@ -154,17 +156,21 @@ body{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: #ebebeb;
     margin: 0px;
     font-family: "Roboto";
     min-height: 100vh;
     width: 100vw; 
+    background-color: #ebebeb;
 }
 
 main{
     width: 90%;
     margin: auto;
-    margin-top: 65vh;
+    margin-top: 60vh;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgb(100, 100, 100);
+    margin-bottom: 70px;
+    padding: 8px;
 }
 
 .linea-body{
@@ -343,6 +349,10 @@ form input{
 }
 
 
+.fotoDeUsuario{
+    padding-left: 19px;
+}
+
 .contraseña-field{
     padding-left: 19px;
 }
@@ -388,9 +398,6 @@ form input{
     font-weight: 600;
 
 }
-
-/**************************************^^FOOTER^^^********************************************/
-
 
 /**************************************^^FOOTER^^^********************************************/
 
@@ -444,7 +451,6 @@ footer{
     font-size: 13px;
     margin-bottom: 30px;
 }
-
 
 /**************************************^^MEDIA-QUERYS^^^********************************************/
 
@@ -592,18 +598,25 @@ footer{
     
     }
 
-    /**************************************^^FORMS^^^********************************************/
+/**************************************^^FORMS^^^********************************************/
 
 
     form{
         background-color: white;
-        padding: 20px;
+        padding: 70px;
         margin: 20px;
         z-index: 1;
         border: 5px;
         color: #666;
         box-shadow: 0px 0px 10px rgb(100, 100, 100);
 
+    }
+
+    form input{
+        text-align: left;
+        width: 200px;
+        margin-right: 60px;
+        margin-bottom: 40px;
     }
 
 
@@ -627,8 +640,7 @@ footer{
         margin: 0px;
     }
 
-
-    #fotoDeUsuario{
+    .fotoDeUsuario{
         margin-top: 10px;
         margin-bottom: 10px;
     }
@@ -667,68 +679,41 @@ footer{
    #aceptoTerminos input{
        margin: 7px;
    }
-
-    /**************************************^^FLEXBOX-BODY^^^********************************************/
-
-      main img{
-        width: 50%;
-    }
-
-    .contenido-body{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .contenedor-body{
-        width: 38%;
-        margin-right: 10vw;
-        margin-top: 20px;
-    }
-
-
-    .titulares{
-        width: 100vw;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-left: 30px;
-    }
-
+   
    /**************************************^^FOOTER^^^********************************************/
    
    footer{
-    display: flex;
-    padding: 10px;
- }
+       display: flex;
+       padding: 10px;
+    }
 
- #footerid{
-     display:inline-block;
- }
+    #footerid{
+        display:inline-block;
+    }
 
- footer p{
-     font-size: 13px;
-     ;
- }
+    footer p{
+        font-size: 13px;
+        ;
+    }
 
- #footerid{
-     font-size: 14px;
-     opacity: 0.5;
- }
+    #footerid{
+        font-size: 14px;
+        opacity: 0.5;
+    }
 
- .texto-footer-in {
-     white-space: inherit;
-     text-align: center;
-     margin: 0px;
-     margin-top: 20px;
-     margin-bottom: 40px;
-     margin-left: 10px;
-     margin-right: 10px;
- }
+    .texto-footer-in {
+        white-space: inherit;
+        text-align: center;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
 
+   
 }
-    
+
 
 
 /**************************************^^DESKTOP^^^********************************************/
@@ -806,35 +791,6 @@ footer{
         margin-top: 49vh;
         
     }
-    /**************************************^^FLEXBOX-BODY^^^********************************************/
-
-    main img{
-        width: 50%;
-    }
-
-    .contenido-body{
-        display: flex;
-        flex-direction: row;
-        justify-content: flex-end;
-        flex-wrap: wrap;
-        width: 100%;
-    }
-
-    .contenedor-body{
-        width: 22%;
-        margin-right: 10vw;
-        margin-top: 20px;
-    }
-
-
-    .titulares{
-        width: 100vw;
-        margin-top: 30px;
-        margin-bottom: 30px;
-        padding-left: 30px;
-    }
-
-
      /**************************************^^BARRA-DE-BUSQUEDA^^^********************************************/
 
  
@@ -882,7 +838,7 @@ footer{
         z-index: 0;
     
     }
-
+    
     /**************************************^^FORMS^^^********************************************/
 
     main h1{
@@ -892,7 +848,7 @@ footer{
 
     form{
         background-color: white;
-        padding: 20px;
+        padding: 100px;
         margin: 20px;
         z-index: 1;
         border: 5px;
@@ -951,56 +907,23 @@ footer{
    }
 
 
-    .botones-ml-register{
-
-    background-color: #1259c3;
-    color: white;
-    display: block;
-    max-width: 200px;
-    padding: 10px;
-    padding-left: 40px;
-    padding-right: 100px;
-    border-radius: 8px;
-    font-size: 14px;
-    margin: auto;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    font-family: "Roboto";
-    font-weight: 600;
-
-    }
-
-    /**************************************^^FOOTER^^^********************************************/
-
-
-    footer{
-        display: flex;
+    
+   .botones-ml-login{
+       background-color: #1259c3;
+        color: white;
+        display: block;
+        max-width: 200px;
         padding: 10px;
+        padding-left: 40px;
+        padding-right: 80px;
+        border-radius: 8px;
+        font-size: 14px;
+        margin: auto;
+        margin-top: 60px;
+        margin-bottom: 10px;
+        font-family: "Roboto";
+        font-weight: 600;
+
     }
- 
-    #footerid{
-        display:inline-block;
-    }
- 
-    footer p{
-        font-size: 13px;
-         
-    }
- 
-    #footerid {
-        font-size: 12px;
-        opacity: 0.5;
-        position: absolute;
-        left: 450px;
-    }   
- 
-    .texto-footer-in {
-        white-space: inherit;
-        text-align: center;
-        margin: 0px;
-        margin-top: 20px;
-        margin-bottom: 40px;
-        margin-left: 10px;
-        margin-right: 10px;
-    }
+
 }   

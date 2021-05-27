@@ -5,118 +5,120 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./css/home.css">
+    <link rel="stylesheet" href="./css/register.css">
     <title>Registro</title>
 </head>
 <body>
-    <header>
+<header>
         <section class="main-header">
             <div class="top-header">
                 <article class="logo-principal">
-                    <img src="./img/logo-mercado-liebre.svg">
+                    <a href="/"><img src="./img/logo-mercado-liebre.svg"></a>
                 </article>
-                    <article class="barraDeBusqueda-nav">
-                        <form action="" method="post" target="_blank">
-                            <fieldset id="barraDeBusqueda-head">
-
-                                <p>
-                                    <input type="search" placeholder="Buscar productos, marcas">
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                    
-                                </p>
-                            </fieldset>
+                <article class="barraDeBusqueda-nav">
+                    <form action="" method="post" target="_blank">
+                        <fieldset id="barraDeBusqueda-head">
+                                <input type="search" placeholder="Buscar productos, marcas">
+                                <button type="submit"><i class="fas fa-search"></i></button>
+                        </fieldset>
                     </article>
                     <h3 class="p-compra"><i class="fas fa-hand-holding-usd"></i>Comprá en cuotas y sin tarjeta de crédito</h3>
-            </div>
-                </form>
+                </div>
+            </form>
             <nav id="navbar">
-                    <ul class="nav-left">
-                        <li><a href="#">Ofertas</a></li>
-                        <li><a href="#">Tiendas Oficiales</a></li>
-                        <li><a href="#">Vender</a></li>
-                        <li><a href="#">Ayuda</a></li>
-                    </ul>
-                    <ul class="nav-right">
-                        <li><a href="#" class="logos-izq">Creá tu cuenta<i class="far fa-id-card"></i></a></li>
-                        <li><a href="#" class="logos-izq">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
-                        <li><a href="#" class="logos-izq">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
-                    </ul>
-                </nav>
-                <article class="burger-menu">
-                    <i class="fas fa-bars fa-2x"></i>
-                </article>
-            </section>
-    
-            <img src="./img/img-home-banner.jpg" class="imagenes">
+                <ul class="nav-left">
+                    <li><a href="#">Ofertas</a></li>
+                    <li><a href="#">Tiendas Oficiales</a></li>
+                    <li><a href="#">Vender</a></li>
+                    <li><a href="#">Ayuda</a></li>
+                </ul>
+                <ul class="nav-right">
+                    <li><a href="#" class="logos-izq">Creá tu cuenta<i class="far fa-id-card"></i></a></li>
+                    <li><a href="#" class="logos-izq">Ingresá<i class="fas fa-sign-in-alt"></i></a></li>
+                    <li><a href="#" class="logos-izq">Mis compras<i class="fas fa-shopping-basket"></i></a></li>
+                </ul>
+            </nav>
+            <article class="burger-menu">
+                <i class="fas fa-bars fa-2x"></i>
+            </article>
+        </section>
+        
+        <img src="./img/img-home-banner.jpg" class="imagen-banner">
     </header>
-<section>
-<form action="/register" method="POST">
-    <fieldset>
-        <label for="nombreYApellido"></label>
-        <input type="text" placeholder="Nombre y Apellido" id="nombreYApellido" name="nombreYApellido">
-    </fieldset>
-    <fieldset>
-        <label for="nombreUsuario"></label>
-        <input type="text" placeholder="Nombre de usuario" id="nombreUsuario" name="nombreUsuario">
-    </fieldset>
-    <fieldset>
-        <label for="e-mail"></label>
-        <input type="email" placeholder="E-mail" id="email" name="email">
-    </fieldset>
-    <fieldset>
-        <label for="fechaDeNacimiento" class="label-titulo">Fecha de nacimiento</label>
-        <input type="date"  id="fechaDeNacimiento" name="fechadDeNacimiento">
-    </fieldset>
-    <fieldset>
-        <label for="domicilio"></label>
-        <input type="text" placeholder="Domicilio" id="domicilio">
-    </fieldset>
-    <fieldset id="perfilDeUsuario">
-        <p>Perfil de usuario</p>
-        <input  type="radio" name="pdeusuario" id="Comprador">
-        <label for="comprador">Comprador</label>
-        <input type="radio" name="pdeusuario" id="vendedor">
-        <label for="vendedor">Vendedor</label>
-    </fieldset>
-    <fieldset>
-        <p>Intereses</p>
-        <input  type="checkbox" name="intereses" id="intereses">
-        <label for="electro">Electro</label>
-        <input  type="checkbox" name="intereses" id="moda">
-        <label for="moda">Moda</label>
-        <input  type="checkbox" name="intereses" id="hogar">
-        <label for="hogar">Hogar</label>
-        <input  type="checkbox" name="intereses" id="jugueteria">
-        <label for="jugueteria">Jugueteria</label>
-        <input  type="checkbox" name="intereses" id="vidaSana">
-        <label for="vidaSana">Vida Sana</label>
-    </fieldset>
-    <fieldset>
-        <label for="fotoDeUsuario">Foto de usuario</label>
-        <input type="file" id="fotoDeUsuario" name="fotoDeUsuario">
-    </fieldset>
-    <fieldset>
-        <label for="contra">Contraseña</label>
-        <input type="password" placeholder="Contraseña" id="contraseña" name="contraseña">
-    </fieldset>
-    <fieldset>
-        <label for="Rcontra">Confirmar contraseña</label>
-        <input type="password" placeholder="Contraseña" id="Rcontraseña" name="Rcontraseña">
-    </fieldset>
-    <fieldset id="botones">
-
-        <button type="submit" class="botones-ml-register">ENVIAR</button>
-        <button type="reset" class="botones-ml-register">RESETEAR</button>
-    </fieldset>
-</form>
-</section>
-<footer>
-    <article>
-        <article class="logos-footer">
-            <i class="fas fa-credit-card fa-3x"></i>
-        </article>
-        <p class="texto-footer">
-            
+    <main>
+    <section>
+        <h1>Completá tus datos</h1>
+        <form action="/register" method="POST">
+            <fieldset>
+                <label for="nombreYApellido" class="nombreYApellido">Nombre y Apellido</label>
+                <input type="text"  id="nombreYApellido" name="nombreYApellido">
+            </fieldset>
+            <fieldset>
+                <label for="nombreUsuario" class="nombreUsuario">Nombre de usuario</label>
+                <input type="text" id="nombreUsuario" name="nombreUsuario">
+            </fieldset>
+            <fieldset>
+                <label for="e-mail" class="e-mail">E-mail</label>
+                <input type="email"  id="email" name="email">
+            </fieldset>
+            <fieldset>
+                <label for="fechaDeNacimiento" class="label-titulo">Fecha de nacimiento</label>
+                <input type="date"  id="fechaDeNacimiento" name="fechadDeNacimiento">
+            </fieldset>
+            <fieldset>
+                <label for="domicilio"></label>
+                <input type="text" placeholder="Domicilio" id="domicilio">
+            </fieldset>
+            <fieldset id="perfilDeUsuario">
+                <p>Perfil de usuario</p>
+                <input  type="radio" name="pdeusuario" id="comprador">
+                <label for="comprador">Comprador</label>
+                <input type="radio" name="pdeusuario" id="vendedor">
+                <label for="vendedor">Vendedor</label>
+            </fieldset>
+            <fieldset id="intereses">
+                <p>Intereses</p>
+                <label for="electro">Electro</label>
+                <input  type="checkbox" name="intereses" id="electro">
+                <label for="moda">Moda</label>
+                <input  type="checkbox" name="intereses" id="moda">
+                <label for="hogar">Hogar</label>
+                <input  type="checkbox" name="intereses" id="hogar">
+                <label for="jugueteria">Jugueteria</label>
+                <input  type="checkbox" name="intereses" id="jugueteria">
+                <label for="vidaSana">Vida Sana</label>
+                <input  type="checkbox" name="intereses" id="vidaSana">
+            </fieldset>
+            <fieldset class="fotoDeUsuario">
+                <label for="fotoDeUsuario">Foto de usuario</label>
+                <input type="file" id="fotoDeUsuario" name="fotoDeUsuario">
+            </fieldset>
+            <fieldset class="contraseña-field">
+                <label for="contra">Contraseña</label>
+                <input type="password" id="contraseña" name="contraseña">
+            </fieldset>
+            <fieldset class="contraseña-field">
+                <label for="Rcontra">Confirmar contraseña</label>
+                <input type="password" id="Rcontraseña" name="Rcontraseña">
+            </fieldset>
+            <fieldset id="aceptoTerminos">
+                <input type="radio"><p class="acepto-termino">Acepto los Términos y Condiciones y autorizo el uso de mis datos de acuerdo a la Declaración de Privacidad.</p>
+            </fieldset>
+            <fieldset id="botones">
+                
+                <button type="submit" class="botones-ml-register">ENVIAR</button>
+                <button type="reset" class="botones-ml-register">RESETEAR</button>
+            </fieldset>
+        </form>
+    </section>
+</main>
+    <footer>
+        <article>
+            <article class="logos-footer">
+                <i class="fas fa-credit-card fa-3x"></i>
+            </article>
+            <p class="texto-footer">
+                
             <b class="titulo-footer">Pagá con tarjeta o en efectivo</b>
             <p class="texto-footer-in">
                 
@@ -153,9 +155,8 @@
             </p>
             
         </p>
+        <article><p id="footerid" class=" titulo-footer titulo-footer-copy">Copyright © 1999-2020 MercadoLiebre S.R.L.</p></article>
     </article>
-    <br>
-    <article><p class="titulo-footer">Copyright © 1999-2020 MercadoLiebre S.R.L.</p></article>
 </footer>
 </body>
 </html>
