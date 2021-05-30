@@ -674,30 +674,29 @@ footer{
     }
  
     #footerid{
-         display:inline-block;
+        display:inline-block;
     }
  
     footer p{
-         font-size: 13px;
-         ;
+        font-size: 13px;
     }
  
     #footerid{
-         font-size: 12px;
-         opacity: 0.5;
-         position: absolute;
-         left: 220px;
-         top: 2540px;
+        font-size: 12px;
+        opacity: 0.5;
+        position: absolute;
+        left: 220px;
+        top: 451vh;
     }
  
     .texto-footer-in {
-         white-space: inherit;
-         text-align: center;
-         margin: 0px;
-         margin-top: 20px;
-         margin-bottom: 40px;
-         margin-left: 10px;
-         margin-right: 10px;
+        white-space: inherit;
+        text-align: center;
+        margin: 0px;
+        margin-top: 20px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .titulo-footer-copy{

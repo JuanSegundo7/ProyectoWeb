@@ -76,7 +76,6 @@ header{
 #barraDeBusqueda-head{
     display: flex;
     flex-direction: row;
-    height: 55px;
     
 }
 
@@ -166,7 +165,7 @@ body{
 main{
     width: 90%;
     margin: auto;
-    margin-top: 60vh;
+    margin-top: 70vh;
     background-color: white;
     box-shadow: 0px 0px 10px rgb(100, 100, 100);
     margin-bottom: 70px;
@@ -697,8 +696,11 @@ footer{
     }
 
     #footerid{
-        font-size: 14px;
+        font-size: 12px;
         opacity: 0.5;
+        position: absolute;
+        left: 200px;
+        top: 246vh;
     }
 
     .texto-footer-in {
@@ -791,7 +793,7 @@ footer{
         margin-top: 49vh;
         
     }
-     /**************************************^^BARRA-DE-BUSQUEDA^^^********************************************/
+    /**************************************^^BARRA-DE-BUSQUEDA^^^********************************************/
 
  
 
@@ -925,5 +927,57 @@ footer{
         font-weight: 600;
 
     }
+
+    /**************************************^^FOOTER^^^********************************************/
+
+
+    footer{
+        width: 100%;
+        box-sizing: content-box;
+        background-color: white; 
+    }
+
+    .logos-footer i{
+        color: #1259c3;
+        margin-left: 45%;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        box-sizing: content-box;
+    }
+
+    .texto-footer{
+        font-size: 16px;
+        color: #666;
+        text-align: center;
+    
+    }
+
+    .titulo-footer{
+        font-size: 20px;
+     color: #666;
+        text-align: center;
+   
+    
+    
+    }
+
+    .texto-footer-in{
+        white-space: inherit;
+        text-align: center;
+        font-size: 13px;
+        margin-top: 13px;
+        margin-bottom: 40px;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+
+    #footerid {
+        font-size: 12px;
+        opacity: 0.5;
+        position: absolute;
+        left: 450px;
+        top: 268vh;
+    } 
+
 
 }   

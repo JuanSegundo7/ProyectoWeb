@@ -389,6 +389,22 @@ form input{
 
 }
 
+/**************************************^^ANIMACION-DESCRIPCION^^^********************************************/
+
+
+.descripciones{
+    visibility: hidden;
+    height: 0vh;
+    overflow: hidden;
+    transition: all .3s ease-in-out;
+}
+
+.contenedor-body:hover > .descripciones{
+    visibility: visible;
+    height: 25vh;
+
+}
+
 /**************************************^^FOOTER^^^********************************************/
 
 
@@ -704,18 +720,18 @@ footer{
  }
 
  #footerid{
-     display:inline-block;
- }
+    font-size: 12px;
+    opacity: 0.5;
+    position: absolute;
+    left: 220px;
+    top: 518vh;
+}
 
  footer p{
      font-size: 13px;
      ;
  }
 
- #footerid{
-     font-size: 14px;
-     opacity: 0.5;
- }
 
  .texto-footer-in {
      white-space: inherit;
@@ -839,7 +855,7 @@ footer{
 
  
 
-    .barraDeBusqueda-nav form{
+     .barraDeBusqueda-nav form{
         background-color: white;
         z-index: 1;
         padding: 10px;
@@ -979,8 +995,12 @@ footer{
     }
  
     #footerid{
-        display:inline-block;
-    }
+        font-size: 12px;
+        opacity: 0.5;
+        position: absolute;
+        left: 220px;
+        top: 392vh;
+   }
  
     footer p{
         font-size: 13px;
